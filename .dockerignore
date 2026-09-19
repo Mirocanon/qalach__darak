@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+qalach_darak.db
+Devis_*.pdf
+.git/
+.vscode/

@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: qalach-darak
+    runtime: docker
+    plan: starter
+    healthCheckPath: /
+    envVars:
+      - key: QALACH_DARAK_PIN
+        sync: false
+      - key: QALACH_DATA_DIR
+        value: /data
+    disk:
+      name: qalach-darak-data
+      mountPath: /data
+      sizeGB: 1
